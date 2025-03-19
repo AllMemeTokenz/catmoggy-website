@@ -42,7 +42,7 @@ const Footer = () => {
           <li className='flex gap-2 items-center group/parent'>
             <GoArrowRight className='text-white w-5 h-5' />
             <HashLink to={'#get-yawn'} className='font-light  text-[16px] md:text-[18px] min-lg:text-[20px] xl:text-[22px] 2xl:text-[24px] group-hover/parent:bg-gray-700 rounded-2xl px-2 py-1'>
-              Get $YAWN
+              Get $CMY
             </HashLink>
           </li>
           <li className='flex gap-2 items-center group/parent'>
@@ -83,7 +83,7 @@ const Footer = () => {
 
       <section className='flex py-6 w-[100%] items-center justify-center border-t border-t-gray-500'>
         <h6 className='text-[1rem] xl:text-[1.2rem] font-light uppercase'>
-          All rights reserved © YAWN 2024
+          All rights reserved © CATMOGGY 2025
         </h6>
       </section>
     </footer>

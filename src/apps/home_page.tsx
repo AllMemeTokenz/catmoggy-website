@@ -2,6 +2,7 @@ import { MdOutlineSubdirectoryArrowRight } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { motion } from "motion/react";
 import { Toaster, toast } from "react-hot-toast";
+import NFTGallery from "../components/ui/home_page/nft_card";
 
 import { RiTelegram2Fill } from "react-icons/ri";
 
@@ -9,18 +10,11 @@ import {
   childVariants,
   containerVariants,
 } from "../components/lib/motion_variants";
-import YawnOffers from "../components/ui/home_page/yawn_offers";
 import SlideYawn from "../components/ui/home_page/slide_yawn";
 
 import zz_img from "../assets/images/home_page/zzz.svg";
-import bannerImg1 from "../assets/images/home_page/bannerYellowImg.svg";
-import bannerImg2 from "../assets/images/home_page/bannerGreen-img.svg";
-
-import globeIcon from "../assets/images/home_page/globeText-icon.svg";
-import offer1 from "../assets/images/home_page/shop-img1.svg";
-import offer2 from "../assets/images/home_page/shop-img2.svg";
-import offer3 from "../assets/images/home_page/shop-img3.svg";
-import offer4 from "../assets/images/home_page/shop-img4.webp";
+import bannerImg1 from "../assets/images/home_page/bannerBlue.svg";
+import bannerImg2 from "../assets/images/home_page/bannerPurple.svg";
 import tapperImg from "../assets/images/home_page/tapperArrowIcon.svg";
 import plan1 from "../assets/images/home_page/plan-img1.svg";
 import arrow from "../assets/images/home_page/cursive-arrow-icon.webp";
@@ -195,65 +189,7 @@ const HomePage = () => {
         id="ecosystem"
         className="flex flex-col md:flex-row gap-6 md:gap-0 md:justify-between px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-24 mt-10 md:h-[700px] md:overflow-y-auto asideScroll"
       >
-        <motion.div className="w-[100%] md:w-[400px] lg:w-[500px] xl:w-[700px] 2xl:w-[1000px] md:sticky top-6 flex flex-col gap-4">
-          <h2 className="text-[3rem] xs:text-[4rem] md:text-[3rem] lg:text-[5.3rem] xl:text-[6rem] 2xl:text-[7rem] tracking-tighter w-[100%] leading-none xl:leading-tighter font-extra">
-            EXPLORE YAWN'S{" "}
-            <span>
-              <img
-                src={globeIcon}
-                alt="Globe representing Yawn's universe"
-                className="inline w-[70px]"
-              />{" "}
-            </span>{" "}
-            UNIVERSE
-          </h2>
-          <Link
-            className="w-fit px-8 py-3 rounded-full bg-black text-[16px] xl:text-[18px] 2xl:text-[20px] text-white font-extra"
-            to={
-              "https://app.uniswap.org/swap?outputCurrency=0x88Ce174C655B6d11210A069B2c106632DaBDB068&chain=ethereum"
-            }
-          >
-            BUY $YAWN
-          </Link>
-        </motion.div>
-        <div className="flex flex-col gap-8">
-          <YawnOffers
-            img={offer1}
-            header="Shop"
-            text="Discover exclusive Yawn merchandise and collectibles."
-            buttonText="Shop now"
-            bgColor="#94B8FF"
-            imgColor="#5285E9"
-            btnColor="#81A8F5"
-          />
-          <YawnOffers
-            img={offer2}
-            header="Staking"
-            text="Earn rewards by securely staking your $YAWN tokens."
-            buttonText="Stake now"
-            bgColor="#FFF494"
-            imgColor="#F4E237"
-            btnColor="#F5E137"
-          />
-          <YawnOffers
-            img={offer3}
-            header="AI Wallet"
-            text="Securely manage your $YAWN tokens with intelligent automation."
-            buttonText="Coming soon"
-            bgColor="#FFB494"
-            imgColor="#ff7940"
-            btnColor="#FF9D74"
-          />
-          <YawnOffers
-            img={offer4}
-            header="NFTs"
-            text="Own unique digital assets and collectibles within the Yawn universe."
-            buttonText="Mint NFT"
-            bgColor="#FFA2A8"
-            imgColor=""
-            btnColor="#FF818A"
-          />
-        </div>
+        <NFTGallery />
       </motion.section>
 
       <section
@@ -275,7 +211,7 @@ const HomePage = () => {
               alt="Pointing to YAWN"
             />
           </span>{" "}
-          of $yawn{" "}
+          of $CMY{" "}
           <span>
             <img
               src={zz_img}
