@@ -11,9 +11,9 @@ export default defineConfig(({ command }) => {
     base: '/',
   }
 
-  if (command !== 'serve') {
-    config.base = '/yawnsworld/'
-  }
+  // if (command !== 'serve') {
+  //   config.base = '/yawnsworld/'
+  // }
 
   return config
 })
