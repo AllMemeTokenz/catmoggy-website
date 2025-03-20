@@ -82,6 +82,8 @@ const HomePage = () => {
               to={
                 "https://dexscreener.com/solana/74NL3WreKRaYDduquKMYNJBSatdcgbNUjgpUtLxgp28w"
               }
+              target="_blank"
+              rel="noopener noreferrer"
             >
               BUY $CMY
             </Link>
