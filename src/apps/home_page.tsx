@@ -22,7 +22,7 @@ import lines_img from "../assets/images/home_page/lines-img1.svg";
 import BlockTemplate from "../components/ui/home_page/block_template";
 
 const HomePage = () => {
-  const tokenCA = "74NL3WreKRaYDduquKMYNJBSatdcgbNUjgpUtLxgp28w";
+  const tokenCA = "Coming Soon!";
   return (
     <main className="flex flex-col gap-8 xl:gap-10 2xl:gap-12 pt-6 md:pt-8 xl:pt-10 2xl:pt-24 font-main overflow-hidden">
       <motion.section
