@@ -22,7 +22,7 @@ import lines_img from "../assets/images/home_page/lines-img1.svg";
 import BlockTemplate from "../components/ui/home_page/block_template";
 
 const HomePage = () => {
-  const tokenCA = "Coming Soon!";
+  const tokenCA = "74NL3WreKRaYDduquKMYNJBSatdcgbNUjgpUtLxgp28w";
   return (
     <main className="flex flex-col gap-8 xl:gap-10 2xl:gap-12 pt-6 md:pt-8 xl:pt-10 2xl:pt-24 font-main overflow-hidden">
       <motion.section
@@ -80,7 +80,7 @@ const HomePage = () => {
             <Link
               className="font-semibold cursor-pointer px-6 py-3 uppercase border border-[#172554] shadow-[2px_2px_0_#172554] active:shadow-[0.5px_0.5px_0_#172554] active:translate-x-[1px] active:translate-y-[1px] text-[#EFF6FF] active:scale-[0.99] transition-all ease-linear duration-100 hover:bg-[#86198F]/80 active:bg-[#86198F]/90 bg-[#86198F]/70 text-[17px] rounded-xl"
               to={
-                "https://app.uniswap.org/swap?outputCurrency=0x88Ce174C655B6d11210A069B2c106632DaBDB068&chain=ethereum"
+                "https://dexscreener.com/solana/74NL3WreKRaYDduquKMYNJBSatdcgbNUjgpUtLxgp28w"
               }
             >
               BUY $CMY
@@ -138,7 +138,7 @@ const HomePage = () => {
                     navigator.clipboard
                       .writeText(tokenCA)
                       .then(() => {
-                        toast.success("Copied to clipboard");
+                        toast.success("Contract Adddress Has Been Copied");
                       })
                       .catch(() => {
                         toast.error("Could not copy");
