@@ -16,15 +16,8 @@ import zz_img from "../assets/images/home_page/zzz.svg";
 import bannerImg1 from "../assets/images/home_page/bannerBlue.svg";
 import bannerImg2 from "../assets/images/home_page/bannerPurple.svg";
 import tapperImg from "../assets/images/home_page/tapperArrowIcon.svg";
-import plan1 from "../assets/images/home_page/plan-img1.svg";
+import tgBanner from "../assets/images/home_page/tg-section.svg";
 import arrow from "../assets/images/home_page/cursive-arrow-icon.webp";
-import plus1 from "../assets/images/home_page/plus-img.svg";
-import getYawn from "../assets/images/home_page/getYown-img.svg";
-import cursorimg from "../assets/images/home_page/cursor-icon.svg";
-import uniswap from "../assets/images/home_page/pink-hourse.svg";
-import keysec_img from "../assets/images/home_page/key-sec-mobile-img.svg";
-import card1 from "../assets/images/home_page/card-1-n.svg";
-import card2 from "../assets/images/home_page/card-2-n.svg";
 import lines_img from "../assets/images/home_page/lines-img1.svg";
 import BlockTemplate from "../components/ui/home_page/block_template";
 
@@ -228,7 +221,7 @@ const HomePage = () => {
       >
         <div className="self-center min-lg:self-auto relative">
           <img
-            src={plan1}
+            src={tgBanner}
             alt="Join the TG Community"
             className="w-[288px] h-[308px] xs:w-[361px] xs:h-[387px] sm:w-[588px] sm:h-[586px] sticky z-40"
           />
@@ -241,7 +234,7 @@ const HomePage = () => {
           />
         </div>
         <motion.div
-          className="min-lg:w-[45%] flex flex-col items-start gap-4"
+          className="min-lg:w-[45%] flex flex-col items-start gap-4 text-[#172554]"
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeIn" }}
@@ -251,7 +244,7 @@ const HomePage = () => {
             (Community)
           </p>
           <h3 className="text-[3rem] xs:text-[4rem] md:text-[4.5rem] min-lg:text-[5.5rem] xl:text-[6.5rem] min-lg:w-[90%] font-light w-[100%]  uppercase tracking-tighter leading-none">
-            Join the Yawn Tribe: Connect on Telegram
+            Join the CATMOGGY Tribe: Connect on Telegram
           </h3>
           <p className="text-[16px] md:text-[18px] xl:text-[24px] 2xl:text-[30px] leading-relaxed tracking-wide font-light uppercase w-[100%]">
             Stay in the loop with real-time updates, discussions, and exclusive
@@ -260,16 +253,15 @@ const HomePage = () => {
           </p>
           <div className="flex gap-6 items-center mt-2">
             <motion.a
-              className="flex gap-2 items-center group/parent outline-none w-fit text-[16px] uppercase xl:text-[18px] 2xl:text-[20px] rounded-full bg-black text-white border border-black py-4 px-8 cursor-pointer"
-              href="https://t.me/yawnsworld"
-              whileHover={{ backgroundColor: "#ffffff", color: "#000000" }}
+              className="flex gap-2 group/parent font-semibold cursor-pointer px-6 py-3 uppercase border border-[#172554] shadow-[2px_2px_0_#172554] active:shadow-[0.5px_0.5px_0_#172554] active:translate-x-[1px] active:translate-y-[1px] text-[#EFF6FF] active:scale-[0.99] transition-all ease-linear duration-100 hover:bg-[#86198F]/80 active:bg-[#86198F]/90 bg-[#86198F]/70 text-[17px] rounded-xl"
+              href="https://t.me/catmoggy"
+              whileHover={{ backgroundColor: "#EFF6FF", color: "#172554" }}
               transition={{ ease: "circOut" }}
               aria-label="Join Telegram Community"
             >
               <p>Join TG Community</p>
-              <RiTelegram2Fill className="w-5 h-5 text-white group-hover/parent:text-black" />
+              <RiTelegram2Fill className="w-5 h-5 text-[#EFF6FF] group-hover/parent:text-[#172554]" />
             </motion.a>
-
             <img
               src={arrow}
               alt="arrow pointing to tg community link"
@@ -280,87 +272,10 @@ const HomePage = () => {
       </section>
 
       <section
-        id="get-yawn"
-        className="flex flex-col gap-8 sm:gap-0 py-10 px-4 sm:px-6 min-lg:px-8 xl:px-10 2xl:px-24 bg-[#F8F8F8] w-[100%]"
+        id="tokenomics"
+        className="flex flex-col gap-12 py-10 px-4 sm:px-6 min-lg:px-8 xl:px-10 2xl:px-24 w-[100%]"
       >
-        <section className="flex flex-col gap-6 sm:flex-row sm:gap-0 sm:justify-between  w-[100%]">
-          <motion.div
-            initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, ease: "easeIn" }}
-            viewport={{ amount: 0.2, once: false }}
-            className="flex flex-col gap-4 w-[100%] lg:w-[600px] xl:w-[700px] lg:py-4"
-          >
-            <p className="font-thin opacity-80 text-[20px] xl:text-[24px] 2xl:text-[26px] tracking-wide leading-relaxed">
-              (GET YOUR YAWN)
-            </p>
-            <h3 className="text-[3rem] opacity-90 xs:text-[4rem] md:text-[4.5rem] lg:text-[5rem] xl:text-[6rem] font-light w-[100%]  uppercase tracking-normal leading-none">
-              where to buy the sleepiest token{" "}
-              <span>
-                <img
-                  src={plus1}
-                  className="inline w-[70px] xl:w-[100px]"
-                  alt="PLUS"
-                />
-              </span>
-            </h3>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, x: 100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, ease: "easeIn" }}
-            viewport={{ amount: 0.2, once: false }}
-            className="w-[400px] xl:w-[600px] 2xl:w-[700px] flex justify-end"
-          >
-            <img
-              src={getYawn}
-              alt="BUY YAWN TODAY"
-              className="w-[100%] aspect-square"
-            />
-          </motion.div>
-        </section>
-        <section className="flex flex-col sm:flex-row sm:justify-between items-center">
-          <motion.div
-            className="flex flex-col gap-3 w-[100%] sm:w-[350px] min-lg:w-[500px] xl:w-[600px] 2xl:w-[700px] py-2"
-            initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, ease: "easeIn" }}
-            viewport={{ amount: 0.2, once: false }}
-          >
-            <h3 className="text-[2rem] md:text-[3rem] xl:text-[4.5rem] 2xl:text-[6rem]">
-              Uniswap
-            </h3>
-            <p className="font-thin opacity-80 text-[18px]  min-lg:text-[20px] xl:text-[24px] 2xl:text-[30px] tracking-wide leading-relaxed">
-              Trade $YAWN tokens easily and securely on Uniswap, the leading
-              decentralized exchange for swapping tokens directly from your
-              wallet.
-            </p>
-            <Link
-              to={""}
-              className="font-light w-fit text-[16px] shadow-md lg:text-[18px] xl:text-[20px] bg-white py-3 px-6 rounded-3xl"
-            >
-              Go to Uniswap
-            </Link>
-            <div className="w-[100px] self-center">
-              <img src={cursorimg} alt="Pointer to Uniswap" className="" />
-            </div>
-          </motion.div>
-          <div className="w-[100%] self-center lg:self-auto sm:w-[300px] md:w-[400px] lg:w-[600px] xl:w-[700px] 2xl:w-[800px]  flex justify-center items-center shadow-2xl shadow-white rounded-xl lg:h-[300px] xl:h-[400px] 2xl:h-[500px] bg-white">
-            <motion.img
-              src={uniswap}
-              alt="UNISWAP"
-              className="w-[80%] min-lg:w-[200px]"
-              initial={{ opacity: 0, x: 100 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, ease: "easeIn" }}
-              viewport={{ amount: 0.2, once: false }}
-            />
-          </div>
-        </section>
-      </section>
-
-      <section className="flex flex-col gap-12 py-10 px-4 sm:px-6 min-lg:px-8 xl:px-10 2xl:px-24 w-[100%]">
-        <section className="flex flex-col min-lg:flex-row gap-4 min-lg:gap-0 min-lg:justify-between">
+        <section className="flex flex-col min-lg:flex-row gap-4 min-lg:gap-0 min-lg:justify-between text-blue-950">
           <motion.div
             className="flex flex-col gap-3 w-[100%] min-lg:w-[580px] xl:w-[690px] 2xl:w-[790px] min-lg:relative"
             initial={{ opacity: 0, y: 100 }}
@@ -369,32 +284,72 @@ const HomePage = () => {
             viewport={{ amount: 0.2, once: false }}
           >
             <h3 className="font-thin opacity-80 text-[20px] xl:text-[24px] 2xl:text-[26px] tracking-wide leading-relaxed">
-              (YAWN BY THE NUMBERS)
+              (CATMOGGY TOKENOMICS)
             </h3>
             <p className="text-[3rem] md:text-[5rem] xl:text-[6rem] 2xl:text-[7rem] tracking-wider w-[100%] leading-none">
               KEY STATS AND SECURITY
             </p>
-            <div className="flex gap-0 min-lg:absolute -top-12 -right-44 xl:-right-32 2xl:-top-6">
-              <img
-                src={keysec_img}
-                alt="key sec images"
-                className="block min-lg:hidden"
-              />
-              <img
-                src={card1}
-                alt=""
-                className="hidden min-lg:block z-20 w-[180px]"
-              />
-              <img
-                src={card2}
-                alt=""
-                className="hidden min-lg:block -translate-x-24 w-[180px]"
-              />
-            </div>
           </motion.div>
           <div className="w-[200px] self-center hidden min-lg:block">
             <img src={lines_img} alt="curvy line" />
           </div>
+        </section>
+        <section className="w-full flex flex-col items-center justify-center px-6 md:px-16">
+          <motion.div
+            className="flex flex-col w-full text-center items-center justify-start"
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            <h1 className="font-bold text-5xl  text-blue-950">
+              $CTY WHITEPAPER
+            </h1>
+            <h2 className="font-light text-xl leading-7  text-blue-950 max-w-2xl mt-2">
+              CATSPLAY ($CTY): THE AI MEME & NFT REVOLUTION ON SOLANA!
+              <br />
+              Discover our vision, mission, and roadmap for the future of
+              CatsPlay.
+            </h2>
+          </motion.div>
+
+          <motion.div
+            className="mt-8"
+            initial={{ scale: 0.9, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.4, delay: 0.4 }}
+          >
+            <a
+              href="/assets/whitepaper-cmy.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold cursor-pointer px-4 uppercase border border-[#172554] shadow-[2px_2px_0_#172554] active:shadow-[0.5px_0.5px_0_#172554] active:translate-x-[1px] active:translate-y-[1px] text-[#EFF6FF] active:scale-[0.99] transition-all ease-linear duration-100 hover:bg-[#86198F]/80 active:bg-[#86198F]/90 bg-[#86198F]/70 text-[17px] py-2 rounded-xl flex items-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5 mr-2"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                />
+              </svg>
+              Download Whitepaper
+            </a>
+          </motion.div>
+
+          <motion.div
+            className="mt-6 text-blue-950/70 text-base"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.3, delay: 0.6 }}
+          >
+            Learn about our technology, tokenomics, and the future of CatsPlay
+          </motion.div>
         </section>
         <BlockTemplate />
       </section>

@@ -35,7 +35,7 @@ const nftData: NFT[] = [
     buyLink: "https://www.okx.com/ul/4wjVUzc",
   },
   {
-    collection: "Yawn NFTs",
+    collection: "Cat Moggy",
     name: "CATMOGGY #3",
     creator: "Cat Moggy",
     price: 153.75,

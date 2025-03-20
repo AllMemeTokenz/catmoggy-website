@@ -47,8 +47,8 @@ const SideBar = () => {
                     }
                     <li className='flex gap-0 items-center group/parent'>
                     <GoArrowRight className='text-black w-5 h-5' />
-                    <HashLink to={'#get-yawn'} className='font-light  text-[16px] md:text-[18px] min-lg:text-[22px] xl:text-[24px] 2xl:text-[26px] group-hover/parent:bg-gray-200 rounded-2xl px-3 py-1'>
-                        Get $YAWN
+                    <HashLink to={'#tokenomics'} className='font-light  text-[16px] md:text-[18px] min-lg:text-[22px] xl:text-[24px] 2xl:text-[26px] group-hover/parent:bg-gray-200 rounded-2xl px-3 py-1'>
+                        Tokenomics
                     </HashLink>
                     </li>
                     <li className='flex gap-0 items-center group/parent'>

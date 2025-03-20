@@ -64,13 +64,9 @@ const DesktopNav = () => {
                     Community
                 </NavLink>
                 <li className=' border-r-[1.4px] border-r-black w-5 h-4' />
-                <NavLink to={'#get-yawn'} className={`text-[16px] xl:text-[18px] 2xl:text-[20px] text-[#0D0B0B] hover:bg-[#e8e8e8] px-2 py-1  hover:rounded-2xl ${isActive('#get-yawn') ? 'bg-[#e8e8e8] rounded-xl' : 'font-light'}`}>
-                    Get $YAWN
+                <NavLink to={'#tokenomics'} className={`text-[16px] xl:text-[18px] 2xl:text-[20px] text-[#0D0B0B] hover:bg-[#e8e8e8] px-2 py-1  hover:rounded-2xl ${isActive('#get-yawn') ? 'bg-[#e8e8e8] rounded-xl' : 'font-light'}`}>
+                    Tokenomic
                 </NavLink>
-                <li className=' border-r-[1.4px] border-r-black w-5 h-4' />
-                <Link to={'https://web3.bitget.com/en/docs/dapp/web-dapp.html'} target='_blank' className={`text-[16px] xl:text-[18px] 2xl:text-[20px] text-[#0D0B0B] hover:bg-[#e8e8e8] px-2 py-1  hover:rounded-2xl ${isActive('https://web3.bitget.com/en/docs/dapp/web-dapp.html') ? 'bg-[#e8e8e8] rounded-xl' : 'font-light'}`}>
-                    Bitget Wallet
-                </Link>
             </ul>
             <div className='flex items-center gap-4 justify-between'>
                 {/* <button type="button" className='p-4 bg-gray-100 hover:bg-black group/btn rounded-xl'>
